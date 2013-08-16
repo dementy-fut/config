@@ -56,7 +56,7 @@ alias gup="gst; gp; gsta;"
 alias php="php -dmemory_limit='2048M' $1"
 alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
-alias config="vi ~/.bashrc"
+alias conf="vi ~/.bashrc"
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 
