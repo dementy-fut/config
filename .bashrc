@@ -22,6 +22,7 @@ alias my2="mysql -ufuturum -pfuturum -Dfuturum2 -h192.168.1.34 --auto-rehash --p
 alias w2="ssh 80.84.244.73";
 alias w1="ssh 80.84.244.71";
 alias porto="ssh 80.84.244.80";
+alias pv="perl version futurum";
 
 alias l="ls -l";
 alias la="ls -la"
