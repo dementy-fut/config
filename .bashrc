@@ -60,6 +60,7 @@ alias php="php -dmemory_limit='2048M' $1"
 alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
 alias conf="vi ~/.bashrc"
+alias sql="ssh sql@192.168.1.34"
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 

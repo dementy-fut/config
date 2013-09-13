@@ -55,7 +55,7 @@ set scrolloff=1
 
 " Выключаем надоедливый "звонок"
 set novisualbell
-set visualbell " вместо писка бипером показывать это на экране
+"set visualbell " вместо писка бипером показывать это на экране
 
 "" Подсвечивать табы и пробелы в конце строки
 set nolist " включить подсветку
@@ -65,8 +65,8 @@ set listchars=tab:>-,trail:-,eol:↲,extends:▸,precedes:◂ " установи
 set pastetoggle=
 
 " Поддержка мыши
-set mouse=a
-set mousemodel=popup
+"set mouse=a
+"set mousemodel=popup
 
 " Кодировка текста по умолчанию
 set termencoding=latin1,utf-8
@@ -303,20 +303,21 @@ imap <C-F> <C-X><C-O>
 " nmap <C-V> +gP
 " imap <C-V> <esc>+gPi
 " vmap <C-C> +yi
-map <C-C> y
-imap <C-C> +yi
-map <C-V> <MiddleMouse>
-imap <C-V> <MiddleMouse>
+"map <C-C> y
+"imap <C-C> +yi
+"map <C-V> <MiddleMouse>
+"imap <C-V> <MiddleMouse>
 
 " Заставляем shift-insert работать как в Xterm
 map <S-Insert> <MiddleMouse>
 
 " C-d - удаление текущей строки
-nmap <C-d> dd
-imap <C-d> <esc>ddi
+nmap <C-x> dd
+imap <C-x> <esc>ddi
 
 " C-e - дублирование текущей строки
-imap <C-e> <esc>yypi
+nmap <C-d> yyp
+imap <C-d> <esc>yypi
 
 " Поиск и замена слова под курсором
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
