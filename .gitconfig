@@ -3,3 +3,4 @@
 	email = dementy@bintime.com
 [color]
     ui = true
+	diff = auto
