@@ -35,6 +35,7 @@ alias se="vi .svn/entries"
 
 alias zf="/usr/local/ZendFrameworkCli/bin/zf.sh"
 alias ar="/etc/init.d/apache2 restart"
+alias al="tail -f /var/log/apache2/error_log"
 alias gl="git log"
 alias glp="git log -p"
 alias glb="git log -p master.."
