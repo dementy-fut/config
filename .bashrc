@@ -18,6 +18,8 @@ fi
 
 alias my="mysql -ufuturum -pfuturum -Dfuturum_inst -h192.168.1.34 --auto-rehash --prompt='select * from \h)[\d]' --pager='less -SFX'"
 alias my2="mysql -ufuturum -pfuturum -Dfuturum2 -h192.168.1.34 --auto-rehash --prompt='(\h)[\d]'"
+alias myl="mysql -ufuturum -pfuturum -Dfuturum_inst --auto-rehash --prompt='(\h)[\d]'"
+
 
 alias w2="ssh 80.84.244.73";
 alias w1="ssh 80.84.244.71";
@@ -59,12 +61,17 @@ alias gin="git log ..@{u}"
 alias gout="git log @{u}.."
 alias grh="git reset --hard"
 alias gup="gst; gp; gsta;"
+alias gm="git merge"
+alias gpo="git pull origin"
 alias php="php -dmemory_limit='2048M' $1"
 alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
-alias conf="vi ~/.bashrc"
+alias conf="vi ~/.bashrc && source ~/.bashrc"
 alias sql="ssh sql@192.168.1.34"
 alias ss="sudo su"
+alias cf="vi configs/config.php"
+export porto="dem@80.84.244.80"
+export w2="dem@80.84.244.73";
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 
