@@ -31,7 +31,7 @@ alias l="ls -l";
 alias la="ls -la"
 
 alias sf="find ./ -name $1";
-alias sg="grep -Rni * --colour=auto --exclude-dir=logs --exclude-dir=build -e "$1;
+alias sg="grep -Rni * --colour=auto --exclude-dir=logs --exclude-dir=build --exclude-dir=store -e "$1;
 alias sl="svn log -v | less"
 alias se="vi .svn/entries"
 
@@ -69,7 +69,7 @@ alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
 alias conf="vi ~/.bashrc && source ~/.bashrc"
 alias sql="ssh sql@192.168.1.34"
-alias ss="sudo su"
+alias ss="echo 'Please start: source /home/dem/.bashrc' && sudo su"
 alias cf="vi configs/config.php"
 export porto="dem@80.84.244.80"
 export w2="dem@80.84.244.73";
