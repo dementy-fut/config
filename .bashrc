@@ -31,7 +31,7 @@ alias l="ls -l";
 alias la="ls -la"
 
 alias sf="find ./ -name $1";
-alias sg="grep -Rni * --colour=auto --exclude-dir=logs --exclude-dir=build --exclude-dir=store -e "$1;
+alias sg="grep -Rni * --colour=auto --exclude-dir=logs --exclude-dir=build --exclude-dir=store  --exclude-dir=nl_NL --exclude-dir=de_DE --exclude-dir=modules  -e "$1;
 alias sl="svn log -v | less"
 alias se="vi .svn/entries"
 
