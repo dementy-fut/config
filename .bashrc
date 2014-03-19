@@ -11,7 +11,7 @@
 # outputting anything in those cases.
 export EDITOR=vi
 
-[[ -f ~/.secure ]] && . ~/.secure
+[[ -f /home/dem/.secure ]] && . /home/dem/.secure
 
 if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
