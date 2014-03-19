@@ -11,6 +11,8 @@
 # outputting anything in those cases.
 export EDITOR=vi
 
+[[ -f ~/.secure ]] && . ~/.secure
+
 if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
@@ -25,7 +27,7 @@ alias w2="ssh 80.84.244.73";
 alias w1="ssh 80.84.244.71";
 alias porto="ssh 80.84.244.80";
 alias db="ssh 192.168.1.227";
-alias pv="sh /home/dem/version";
+alias pv="echo -e \"$VP_TEXT\"";
 
 alias l="ls -l";
 alias la="ls -la"
@@ -68,6 +70,7 @@ alias php="php -dmemory_limit='2048M' $1"
 alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
 alias conf="vi ~/.bashrc && source ~/.bashrc"
+alias conf2="vi ~/.secure && source ~/.secure"
 alias sql="ssh sql@192.168.1.34"
 alias ss="echo 'Please start: source /home/dem/.bashrc' && sudo su"
 alias cf="vi configs/config.php"
