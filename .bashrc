@@ -25,7 +25,7 @@ alias w2="ssh 80.84.244.73";
 alias w1="ssh 80.84.244.71";
 alias porto="ssh 80.84.244.80";
 alias db="ssh 192.168.1.227";
-alias pv="perl version futurum";
+alias pv="sh version";
 
 alias l="ls -l";
 alias la="ls -la"
