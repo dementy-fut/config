@@ -18,15 +18,16 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-alias my="mysql -ufuturum -pfuturum -Dfuturum_inst -h192.168.1.34 --auto-rehash --prompt='select * from \h)[\d]' --pager='less -SFX'"
-alias my2="mysql -ufuturum -pfuturum -Dfuturum2 -h192.168.1.34 --auto-rehash --prompt='(\h)[\d]'"
-alias myl="mysql -ufuturum -pfuturum -Dfuturum_inst --auto-rehash --prompt='(\h)[\d]'"
+alias my="mysql -u$DB_USER -p$DB_PASS -D$DB_DB -h$DB_IP --auto-rehash --prompt='$DB_ALERT (\h)[\d]' --pager='less -SFX'"
+alias myr="mysql -u$DB_USER -p$DB_PASS -D$DB_DB -h$DB_IP_R --auto-rehash --prompt='replica(\h)[\d]'"
+alias myl="mysql -u$DB_USER_L -p$DB_PASS_L -D$DB_DB_L -h$DB_IP_L --auto-rehash --prompt='(\h)[\d]'"
 
 
-alias w2="ssh 80.84.244.73";
-alias w1="ssh 80.84.244.71";
-alias porto="ssh 80.84.244.80";
-alias db="ssh 192.168.1.227";
+alias w2="ssh $W2_IP";
+alias w1="ssh $W1_IP";
+alias porto="ssh $PORTO_IP";
+alias db="ssh $DB_IP";
+alias parma="ssh $DB_IP_R";
 alias pv="echo -e \"$VP_TEXT\"";
 
 alias l="ls -l";
@@ -34,11 +35,9 @@ alias la="ls -la"
 
 alias sf="find ./ -name $1";
 alias sg="grep -Rni * --colour=auto --exclude-dir=logs --exclude-dir=build --exclude-dir=store  --exclude-dir=nl_NL --exclude-dir=de_DE --exclude-dir=modules  -e "$1;
-alias sl="svn log -v | less"
-alias se="vi .svn/entries"
 
 alias zf="/usr/local/ZendFrameworkCli/bin/zf.sh"
-alias ar="/etc/init.d/apache2 restart"
+alias ar="/etc/init.d/apache2 reload"
 alias al="tail -f /var/log/apache2/error_log"
 alias gl="git log"
 alias glp="git log -p"
@@ -56,6 +55,7 @@ alias gc-="git checkout --"
 alias gst="git stash"
 alias gsta="git stash apply"
 alias gp="git pull"
+alias gf="git fetch"
 alias gpu="git push"
 alias gchp="git cherry-pick"
 alias gcom="git commit"
@@ -66,7 +66,7 @@ alias grh="git reset --hard"
 alias gup="gst; gp; gsta;"
 alias gm="git merge"
 alias gpo="git pull origin"
-alias php="php -dmemory_limit='2048M' $1"
+alias phpm="php -dmemory_limit='2048M' $1"
 alias gign="git update-index --assume-unchanged "
 alias gnoign="git update-index --no-assume-unchanged "
 alias conf="vi ~/.bashrc && source ~/.bashrc"
@@ -74,8 +74,7 @@ alias conf2="vi ~/.secure && source ~/.secure"
 alias sql="ssh sql@192.168.1.34"
 alias ss="echo 'Please start: source /home/dem/.bashrc' && sudo su"
 alias cf="vi configs/config.php"
-export porto="dem@80.84.244.80"
-export w2="dem@80.84.244.73";
+
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 
