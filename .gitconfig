@@ -21,3 +21,5 @@
     filemode = false
 #[push]
 #	default = simple
+[push]
+	default = matching
