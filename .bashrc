@@ -74,6 +74,8 @@ alias conf2="vi ~/.secure && source ~/.secure"
 alias sql="ssh sql@192.168.1.34"
 alias ss="echo 'Please start: source /home/dem/.bashrc' && sudo su"
 alias cf="vi configs/config.php"
+alias fo="cd $FO_PATH; pwd;";
+alias bo="cd $BO_PATH; pwd;";
 
 #alias ls="ls -la$@"
 # Put your fun stuff here.
