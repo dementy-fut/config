@@ -76,7 +76,7 @@ alias ss="echo 'Please start: source /home/dem/.bashrc' && sudo su"
 alias cf="vi configs/config.php"
 alias fo="cd $FO_PATH; pwd;";
 alias bo="cd $BO_PATH; pwd;";
-
+alias fc="fcrontab -e";
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 
