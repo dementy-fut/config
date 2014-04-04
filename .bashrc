@@ -77,6 +77,7 @@ alias cf="vi configs/config.php"
 alias fo="cd $FO_PATH; pwd;";
 alias bo="cd $BO_PATH; pwd;";
 alias fc="fcrontab -e";
+alias cu="php composer.phar update --no-dev";
 #alias ls="ls -la$@"
 # Put your fun stuff here.
 
