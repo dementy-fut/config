@@ -75,6 +75,7 @@ alias conf2="vi ~/.secure && source ~/.secure"
 alias sql="ssh sql@192.168.1.34"
 alias ss="$MY_CONF"
 alias cf="vi configs/config.php"
+alias cfd="vi configs/config.de.php"
 alias fo="cd $FO_PATH; pwd;";
 alias bo="cd $BO_PATH; pwd;";
 alias fc="fcrontab -e";
